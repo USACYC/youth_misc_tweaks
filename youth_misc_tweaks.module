@@ -2,8 +2,12 @@
 /**
  * Implements hook_form_FORM_ID_alter
  */
-function youth_membership_product_form_user_register_form_alter(&$form, &$form_state, &$form_id) {        
+function youth_misc_tweaks_form_user_register_form_alter(&$form, &$form_state, &$form_id) {        
   $form['actions']['submit']['#value'] = 'Join Now';
   $form['civicrm-profile-register']['#weight'] = -11;
 }
 
+function youth_misc_tweaks_form_commerce_cart_add_to_cart_form_4_5_6_7_8_9_10_alter(&$form, &$form_state, &$form_id) {
+  $form['submit']['#value'] = 'Sign up';
+  #dpm($form);
+}

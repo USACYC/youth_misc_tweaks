@@ -43,13 +43,5 @@ function youth_misc_tweaks_form_commerce_cart_add_to_cart_form_4_5_6_7_8_9_10_al
   $form['commerce_payment']['payment_details']['credit_card']['cardonfile_store']['#disabled'] = TRUE;
   $form['commerce_payment']['payment_details']['cardonfile_instance_default']['#default_value'] = TRUE;
   $form['commerce_payment']['payment_details']['cardonfile_instance_default']['#access'] = FALSE;
-#  dpm($form);
 }
-
-#function youth_misc_tweaks_page_alter(&$page) {
-#  dpm($page);
-#}
-#function youth_misc_tweaks_form_alter(&$form, &$form_id) {
-#  dpm($form);
-#}
 
